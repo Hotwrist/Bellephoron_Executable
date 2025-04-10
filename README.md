@@ -39,9 +39,11 @@ This will start the scan for userland rootkits and ELF binaries that don't have 
 
 ### Command-Line Options:
 By default, running Bellephoron without any commandline argument will scan the directories: "/bin", "/sbin", "/usr/bin", "/usr/sbin". If you have a specific directory containing Linux ELF binaries to scan, put them in a text file and pass it to Bellephoron. The directories should be entered one per line e.g let's say this is the content of dir.txt:
+```bash
 /home/kali/Documents
 /bin
 /etc
+```
 
 - `./bellephoron dir.txt`: Scan the Linux ELF binaries in the file: dir.txt.
 
